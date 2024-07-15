@@ -9,5 +9,10 @@ int main(){
 			cout<<"Ingrese el valor del elemento A["<<i+1<<" , "<<j+1<<" ]"<<endl; cin>>A[i][j];
 		}
 	}
+	
+	for(int c = 0; c < n; c++){//Contiene la suma de la diagonal secundaria
+	s = s + A[c][n - (c+1)];
+	}
+	cout<<"Suma de la diagonal secundaria: "<<s<<endl;
 	return 0;
 }
